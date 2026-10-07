@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+.mypy_cache/
+
+# OpenTimestamps proofs generated at runtime
+*.ots
+
+# Generated reports
+*-report.md
+report.md
+out/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+!samples/sample-report.md

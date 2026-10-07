@@ -1,0 +1,6 @@
+# Runtime: assure.py uses only the Python 3.10+ standard library.
+# The OpenTimestamps stamp (--stamp) shells out to the optional `ots` binary,
+# installed separately: pip install opentimestamps-client
+
+# Development / test only:
+pytest>=7.0
