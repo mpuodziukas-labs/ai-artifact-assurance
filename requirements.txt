@@ -3,4 +3,4 @@
 # installed separately: pip install opentimestamps-client
 
 # Development / test only:
-pytest>=7.0
+pytest==9.0.3  # 9.0.3 fixes GHSA-6w46-j5rx-g56g (tmpdir)
