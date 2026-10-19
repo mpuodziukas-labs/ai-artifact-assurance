@@ -38,7 +38,8 @@ def run_tests(cwd):
 
 def fresh_copy():
     d = os.path.join(tempfile.mkdtemp(prefix="mut-"), "repo")
-    shutil.copytree(ROOT, d, ignore=shutil.ignore_patterns("__pycache__", ".git", ".pytest_cache"))
+    # .git is kept: tests/test_stranger.py runs `git ls-files` on the copy.
+    shutil.copytree(ROOT, d, ignore=shutil.ignore_patterns("__pycache__", ".pytest_cache"))
     return d
 
 
