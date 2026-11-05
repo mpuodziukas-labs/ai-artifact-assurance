@@ -2,6 +2,8 @@
 
 Proves: a deterministic CLI turns an AI-generated draft plus its source files into a hashed evidence report, and its tests have teeth. Verify in 60s: `python3 assure.py samples/artifact.md --source samples/source.md; echo "exit code: $?"`
 
+Where this fits: OWASP LLM Top 10 2025 LLM09 Misinformation; NIST AI RMF function MEASURE. Sources in SOURCES.md.
+
 A small, deterministic, standard-library Python CLI. Input is an artifact (text, markdown or code) and optional source files. Output is a timestamped **evidence report** in Markdown.
 
 > **Evidence, not attestation.** The tool gathers and presents findings on an artifact at a point in time. It does not certify it, attest to it, or give an opinion on correctness or compliance. Every report ends with that disclaimer.
